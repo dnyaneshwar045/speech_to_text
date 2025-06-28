@@ -1,0 +1,73 @@
+body {
+    background-color: #dbdbdb;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+}
+
+h1 {
+    margin-top: 3rem;
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    opacity: .8;
+}
+
+#wrapper {
+    width: 700px;
+    margin: 24px auto 0 auto;
+}
+
+#text {
+    width: 100%;
+    height: 160px;
+    overflow: hidden;
+    background-color: #cdcdcd;
+    border: none;
+    color: #222;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 24px;
+    resize: none;
+    line-height: 40px;
+    padding: 20px 50px 120px 50px;
+    border-radius: 12px;
+    margin-top: 5rem;
+    box-sizing: border-box;
+}
+
+.container {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.playButton {
+    height: 70px;
+    width: 70px;
+    cursor: pointer;
+    transition: box-shadow 0.3s;
+    object-fit: contain;      /* Ensures the green part fills the box */
+    border-radius: 14px;       /* Makes the icon round if the image is square */
+    padding: 0;               /* Removes any default padding */
+    box-sizing: border-box;
+}
+
+.playButton:hover {
+    box-shadow: 0 6px 20px 0 #00ff15;
+}
+
+.instruction {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: block;
+    margin-top: 10px;
+    font-size: 18px;
+    color: #333;
+}
+
+@media (max-width: 800px) {
+    #wrapper {
+        width: 95%;
+    }
+    #text {
+        font-size: 18px;
+        padding: 10px 10px 60px 10px;
+    }
+}
